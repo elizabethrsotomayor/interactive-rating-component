@@ -34,13 +34,13 @@ p {
   border-radius: 40px;
 }
 
-/* .thank-you-card {
-  visibility: hidden;
-} */
-
-.ratings-card {
+.thank-you-card {
   visibility: hidden;
 }
+
+/* .ratings-card {
+  visibility: hidden;
+} */
 
 .thank-you-card {
   display: flex;
@@ -52,11 +52,11 @@ p {
   height: 40%;
   width: 40%;
   margin: auto;
-  /* margin-top: 1.2rem; */
+  margin-top: 0.2rem;
 }
 
 .thank-you-card p {
-  width: 80%;
+  width: 95%;
   margin: auto;
   text-align: center;
 }
@@ -114,8 +114,9 @@ input[type="radio"]:hover {
 
 label span:first-of-type {
   position: relative;
-  left: -2.6rem;
-  bottom: 1rem;
+  left: -2.3rem;
+  bottom: -1rem;
+  top: -1.4rem;
   font-size: calc(15rem / 16);
   color: hsl(217, 12%, 63%);
 }
@@ -139,6 +140,11 @@ input[type="submit"] {
   width: 90%;
   margin-top: 1.4rem;
   margin-left: 1rem;
+}
+
+input[type="submit"]:hover {
+  color: hsl(25, 97%, 53%);
+  background: #fff;
 }
 
 .attribution {
