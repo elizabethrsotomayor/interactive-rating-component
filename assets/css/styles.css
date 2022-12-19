@@ -22,25 +22,12 @@ p {
 
 .card {
   background-color: hsl(213, 19%, 18%);
-  width: 30%;
-  height: 50%;
-  /* padding: 2.4rem; */
-  padding: 1.6rem;
-  padding-bottom: 4.2rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   border-radius: 40px;
 }
 
 .thank-you-card {
   visibility: hidden;
 }
-
-/* .ratings-card {
-  visibility: visible;
-} */
 
 .thank-you-card {
   display: flex;
@@ -94,22 +81,13 @@ input[type="radio"] {
   -moz-appearance: none;
 }
 
-input[type="radio"]:focus {
-  outline: none;
-}
-
 input[type="radio"]:checked {
   background-color: hsl(216, 12%, 54%);
   color: white;
 }
 
-input[type="radio"]:checked ~ span:first-of-type,
-input[type="radio"]:hover ~ span:first-of-type {
+input[type="radio"]:checked ~ span:first-of-type {
   color: white;
-}
-
-input[type="radio"]:hover {
-  background-color: hsl(25, 97%, 53%);
 }
 
 label span:first-of-type {
@@ -121,30 +99,14 @@ label span:first-of-type {
   color: hsl(217, 12%, 63%);
 }
 
-label span {
-  position: relative;
-  top: -1.6rem;
-}
-
 input[type="submit"] {
-  padding: 5px 15px;
   background: hsl(25, 97%, 53%);
   color: #fff;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 0.3rem;
-  border-radius: 2rem;
-  padding: 1rem;
   border: 0 none;
-  cursor: pointer;
   width: 90%;
-  margin-top: 1.4rem;
-  margin-left: 1rem;
-}
-
-input[type="submit"]:hover {
-  color: hsl(25, 97%, 53%);
-  background: #fff;
 }
 
 .attribution {
@@ -153,4 +115,96 @@ input[type="submit"]:hover {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/******************************/
+/* DESKTOP STYLES */
+/******************************/
+
+@media (min-width: 1024px) {
+  .card {
+    width: 30%;
+    height: 50%;
+    padding: 1.6rem;
+    padding-bottom: 4.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  input[type="radio"]:focus {
+    outline: none;
+  }
+
+  input[type="radio"]:hover ~ span:first-of-type {
+    color: white;
+  }
+
+  input[type="radio"]:hover {
+    background-color: hsl(25, 97%, 53%);
+  }
+
+  label span {
+    position: relative;
+    top: -1.6rem;
+  }
+
+  input[type="submit"]:hover {
+    color: hsl(25, 97%, 53%);
+    background: #fff;
+  }
+
+  input[type="submit"] {
+    padding: 5px 15px;
+    border-radius: 2rem;
+    padding: 1rem;
+    border: 0 none;
+    cursor: pointer;
+    width: 90%;
+    margin-top: 1.4rem;
+    margin-left: 1rem;
+  }
+}
+
+/******************************/
+/* MOBILE STYLES */
+/******************************/
+@media (min-width: 375px) and (max-width: 800px) {
+  .card {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 1rem;
+    position: absolute;
+    top: 25%;
+  }
+
+  input[type="radio"] {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  label span:first-of-type {
+    position: relative;
+    left: -2rem;
+    bottom: -1rem;
+    top: -1.4rem;
+    font-size: calc(15rem / 16);
+    color: hsl(217, 12%, 63%);
+  }
+
+  input[type="submit"] {
+    padding-top: 4.6rem;
+    margin-bottom: 1.2rem;
+    -webkit-appearance: none;
+    border-radius: 2rem;
+  }
+
+  .submit-btn {
+    padding: 5rem 15rem !important;
+  }
+
+  .ratings {
+    margin-bottom: 1.2rem;
+  }
 }
