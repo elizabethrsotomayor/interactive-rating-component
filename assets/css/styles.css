@@ -194,8 +194,8 @@ input[type="submit"] {
   }
 
   input[type="submit"] {
-    padding-top: 4.6rem;
-    margin-bottom: 1.2rem;
+    /* padding-top: 4.6rem; */
+    /* margin-bottom: 1.2rem; */
     -webkit-appearance: none;
     border-radius: 2rem;
   }
