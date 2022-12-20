@@ -197,11 +197,11 @@ input[type="submit"] {
     /* padding-top: 4.6rem; */
     /* margin-bottom: 1.2rem; */
     -webkit-appearance: none;
+    width: 90%;
     border-radius: 2rem;
   }
 
   .submit-btn {
-    padding: 5rem 15rem !important;
   }
 
   .ratings {
