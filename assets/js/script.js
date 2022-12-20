@@ -1,3 +1,5 @@
+"use strict";
+
 const ratings = document.getElementsByName("ratings");
 const submitBtn = document.getElementById("submit-btn");
 const ratings_card = document.getElementById("ratings-card");
